@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.75rem;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  color: white;
+  background: linear-gradient(to right, #7c3aed, #6366f1);
+  border-radius: 16px;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+p {
+  text-align: center;
+  padding: 0.5rem;
+  color: rgb(7, 1, 18);
+  max-width: 800px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .task-input,
+  .task-list {
+    padding: 1rem;
+  }
+
+  .task-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .task-list button {
+    width: 100%;
+    margin-left: 0;
+  }
+}

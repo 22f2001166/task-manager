@@ -1,0 +1,97 @@
+:host {
+  display: block;
+}
+
+.task-list {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 1;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-list li:hover {
+  background-color: #eef2f7;
+  transform: translateY(-2px);
+}
+
+.task-list li:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.task-list li span {
+  font-size: 1rem;
+  flex-grow: 1;
+  padding-left: 1rem;
+  word-break: break-word;
+}
+
+.task-list li span.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Action Buttons */
+.task-list button {
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-list button:hover {
+  background-color: #5b21b6;
+}
+
+.completed-task {
+  color: #10b981;
+  font-size: 1.2rem;
+}
+
+.delete-task {
+  color: #ef4444;
+  font-size: 1.2rem;
+}
+
+.filter-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.filter-buttons button {
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+  background-color: #cbd5e1;
+}

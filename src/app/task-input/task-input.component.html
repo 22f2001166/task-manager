@@ -1,0 +1,24 @@
+<div class="task-input">
+  <form (ngSubmit)="addTask()">
+    <div class="form-row">
+      <input
+        type="text"
+        [(ngModel)]="title"
+        name="title"
+        placeholder="Task name"
+        required
+      />
+
+      <select [(ngModel)]="priority" name="priority" required>
+        <option value="" disabled selected>Select priority</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+
+      <input type="time" [(ngModel)]="time" name="time" required />
+    </div>
+
+    <button type="submit">Add Task</button>
+  </form>
+</div>
